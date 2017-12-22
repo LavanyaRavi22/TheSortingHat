@@ -21,10 +21,10 @@ class App extends Component {
       <div className="wholePage">
         <h1 className="title"> The Sorting Hat </h1>
         {this.state && !this.state.landingPage &&
-          <SortingPage landingPage={this.landingPage}/>
+          <SortingPage landingPage={this.landingPage}/>   //Display landing page first
         } 
         {this.state && this.state.landingPage &&
-          <QuestionList />
+          <QuestionList />                                // Listing the questions
         } 
           
       </div>

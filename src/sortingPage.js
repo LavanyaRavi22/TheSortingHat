@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import sortingHat from './sortingHat.png';
 import './App.css';
 
+//First Page
+
 class SortingPage extends Component{
 	render() {
 		return(

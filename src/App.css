@@ -75,3 +75,32 @@ html,body {
   /*#009FD1;*/
   cursor:pointer;
 }
+
+/*-----Questions and Options---------*/
+.questionSection {
+  width:70%;
+  margin:0 auto;
+  margin-top:10%;
+  font-size:180%;
+  font-family: 'Great Vibes', cursive;
+}
+
+.options {
+  color:white;
+  margin-left:20%;
+}
+
+.optionsValue {
+  color:white;
+  padding:1%;
+  margin-top:3%;
+  font-size:130%;
+}
+
+.nextBtn {
+  padding:1%;
+  padding-right:2%;
+  font-size:90%;
+  font-family: 'Great Vibes', cursive;
+  float:right;
+}
