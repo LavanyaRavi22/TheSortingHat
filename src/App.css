@@ -104,3 +104,52 @@ html,body {
   font-family: 'Great Vibes', cursive;
   float:right;
 }
+
+/*-----Result Section--------*/
+.resultSection {
+  width:100%;
+  margin:0 15%;
+}
+
+.gryffindorSection {
+  width:250px;
+  height:300px;
+  /*width:25%;*/
+  /*background-color:red;*/
+  float:left;
+}
+
+.ravenclawSection {
+  width:250px;
+  height:300px;
+  /*width:25%;*/
+  /*background-color:red;*/
+  float:left;
+}
+
+.hufflepuffSection {
+  width:250px;
+  height:300px;
+  /*width:25%;*/
+  /*background-color:red;*/
+  float:left;
+}
+
+.slytherinSection {
+  width:250px;
+  height:300px;
+  /*width:25%;*/
+  /*background-color:red;*/
+  float:left;
+}
+
+.crestImage {
+  width:80%;
+  /*padding-left:10%;*/
+}
+
+.housePercent {
+  color:white;
+  text-align:center;
+  font-size:200%;
+}
