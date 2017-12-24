@@ -7,16 +7,12 @@ import slytherin from './images/Slytherin_Crest.png';
 
 class DisplayResults extends Component {
 
-	constructor() {
-		super();
-	}
-
 	getTotal(g,r,h,s) {
 		return (g+r+h+s);
 	}
 
 	housePercentage(houseNumber) {
-		return ((houseNumber/this.getTotal(this.props.gryffindor,this.props.ravenclaw,this.props.hufflepuff,this.props.slytherin))*100)
+		return Math.ceil((houseNumber/this.getTotal(this.props.gryffindor,this.props.ravenclaw,this.props.hufflepuff,this.props.slytherin))*100)
 	}
 
 	render() {
@@ -26,33 +22,33 @@ class DisplayResults extends Component {
 				<div class="gryffindorSection">
 					<img src={gryffindor}
 						 alt="Gryffindor Crest"
-						 class="crestImage" />
-					<p className="housePercent"> 
-						{this.housePercentage(this.props.gryffindor) } %
+						 className="crestImage" />
+					<p className="housePercent  gryffindor"> 
+						{this.housePercentage(this.props.gryffindor)}%
 					</p>
 				</div>
 				<div class="ravenclawSection">
 					<img src={ravenclaw}
 						 alt="Ravenclaw Crest"
-						 class="crestImage" />
-					<p className="housePercent"> 
-						{this.housePercentage(this.props.ravenclaw) } %
+						 className="crestImage" />
+					<p className="housePercent ravenclaw"> 
+						{this.housePercentage(this.props.ravenclaw)}%
 					</p>
 				</div>
 				<div class="hufflepuffSection">
 					<img src={hufflepuff}
 						 alt="Hufflepuff Crest"
-						 class="crestImage" />
-					<p className="housePercent"> 
-						{this.housePercentage(this.props.hufflepuff) } %
+						 className="crestImage" />
+					<p className="housePercent hufflepuff"> 
+						{this.housePercentage(this.props.hufflepuff)}%
 					</p>
 				</div>
 				<div class="slytherinSection">
 					<img src={slytherin}
 						 alt="Slytherin Crest"
-						 class="crestImage" />
-					<p className="housePercent"> 
-						{this.housePercentage(this.props.slytherin) } %
+						 className="crestImage" />
+					<p className="housePercent slytherin"> 
+						{this.housePercentage(this.props.slytherin)}%
 					</p>
 				</div>
 
